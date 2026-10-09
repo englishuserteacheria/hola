@@ -1,19 +1,167 @@
-// Reproducción de voz en ESPAÑOL DE MÉXICO (es-MX)
-function speakEs(text) {
-  if ('speechSynthesis' in window) {
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'es-MX'; // Configurado específicamente para México
-
-    // Buscar una voz nativa de México si está disponible en el navegador
-    const voices = window.speechSynthesis.getVoices();
-    const mxVoice = voices.find(v => v.lang === 'es-MX' || v.lang.includes('MX'));
-    if (mxVoice) {
-      utterance.voice = mxVoice;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel 1 - Lección 1: Saludos y Vocabulario Escolar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
     }
+    h1, h2, h3 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 15px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      width: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .card p {
+      margin: 8px 0;
+      font-size: 12px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 4px;
+      flex-direction: column;
+      width: 100%;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 6px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 11px;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    .btn-record {
+      background-color: #e74c3c;
+    }
+    .btn-record:hover {
+      background-color: #c0392b;
+    }
+    .section-box {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .exercise-item {
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #f0f4f8;
+      border-radius: 6px;
+    }
+    .feedback {
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    .correct { color: #27ae60; }
+    .incorrect { color: #e74c3c; }
+  </style>
+</head>
+<body>
 
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(utterance);
-  } else {
-    alert('Tu navegador no soporta la reproducción de audio.');
-  }
-}
+  <!-- Logo y Banner -->
+  <div style="text-align:center;">
+    <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/logo.png" alt="School Logo" style="width: 150px; height: auto;">
+  </div>
+  <h1>Lección 1: Saludos y Objetos Escolares</h1>
+  <p style="text-align:center;"><em>(Lesson 1: Greetings & School Objects)</em></p>
+  
+  <div style="text-align:center;">
+    <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/classroom.jpg" alt="Classroom Photo" style="max-width: 100%; height: auto; border-radius: 8px;">
+  </div>
+
+  <h2>Vocabulario (36 Palabras)</h2>
+  <p style="text-align:center;"><em>Instrucciones: Escucha las palabras en español, relaciónalas con las imágenes y practica tu pronunciación en inglés.</em></p>
+
+  <!-- Tarjetas de Vocabulario (36 ítems) -->
+  <div class="grid-container">
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencil_sharpener.jpg" alt="Sacapuntas">
+      <p><strong>Sacapuntas</strong><br><em>(Pencil sharpener)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Sacapuntas')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Pencil sharpener', 'fb-0')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-0" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/school_bag.jpg" alt="Mochila">
+      <p><strong>Mochila</strong><br><em>(School bag)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Mochila')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('School bag', 'fb-1')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-1" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pen.jpg" alt="Bolígrafo">
+      <p><strong>Bolígrafo</strong><br><em>(Pen)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Bolígrafo')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Pen', 'fb-2')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-2" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pens.jpg" alt="Bolígrafos">
+      <p><strong>Bolígrafos</strong><br><em>(Pens)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Bolígrafos')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Pens', 'fb-3')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-3" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencil.jpg" alt="Lápiz">
+      <p><strong>Lápiz</strong><br><em>(Pencil)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Lápiz')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Pencil', 'fb-4')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-4" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencils.jpg" alt="Lápices">
+      <p><strong>Lápices</strong><br><em>(P
