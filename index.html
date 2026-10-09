@@ -182,7 +182,7 @@
       recognition.start();
       recognition.onresult = function(event) {
         const transcript = event.results[0][0].transcript.toLowerCase().trim();
-        const expected = expectedText.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").trim();
+        const expected = expectedText.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()¿?¡!]/g, "").trim();
         if (transcript.includes(expected) || expected.includes(transcript)) {
           feedbackEl.className = 'feedback correct';
           feedbackEl.innerText = `¡Excelente! Escuché: "${transcript}"`;
