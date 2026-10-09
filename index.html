@@ -24,91 +24,560 @@
   </style>
 </head>
 <body>
-  <div style="text-align:center;"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/logo.png" alt="Logo" style="width: 150px;"></div>
+
+  <!-- Logo y Banner -->
+  <div style="text-align:center;">
+    <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/logo.png" alt="School Logo" style="width: 150px; height: auto;">
+  </div>
   <h1>Lección 1: Saludos y Objetos Escolares</h1>
   <p style="text-align:center;"><em>(Lesson 1: Greetings & School Objects)</em></p>
-  <div style="text-align:center;"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/classroom.jpg" alt="Classroom" style="max-width: 100%; border-radius: 8px;"></div>
+  
+  <div style="text-align:center;">
+    <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/classroom.jpg" alt="Classroom Photo" style="max-width: 100%; height: auto; border-radius: 8px;">
+  </div>
 
   <h2>Vocabulario (36 Palabras)</h2>
+  <p style="text-align:center;"><em>Instrucciones: Escucha las palabras en español, relaciónalas con las imágenes y practica tu pronunciación en inglés.</em></p>
+
+  <!-- Tarjetas de Vocabulario (36 ítems) -->
   <div class="grid-container">
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencil_sharpener.jpg"><p><strong>Sacapuntas</strong><br><em>(Pencil sharpener)</em></p><div class="btn-group"><button onclick="speakEs('Sacapuntas')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Pencil sharpener', 'fb-0')">🎙️ Practicar</button></div><span id="fb-0" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/school_bag.jpg"><p><strong>Mochila</strong><br><em>(School bag)</em></p><div class="btn-group"><button onclick="speakEs('Mochila')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('School bag', 'fb-1')">🎙️ Practicar</button></div><span id="fb-1" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pen.jpg"><p><strong>Bolígrafo</strong><br><em>(Pen)</em></p><div class="btn-group"><button onclick="speakEs('Bolígrafo')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Pen', 'fb-2')">🎙️ Practicar</button></div><span id="fb-2" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pens.jpg"><p><strong>Bolígrafos</strong><br><em>(Pens)</em></p><div class="btn-group"><button onclick="speakEs('Bolígrafos')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Pens', 'fb-3')">🎙️ Practicar</button></div><span id="fb-3" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencil.jpg"><p><strong>Lápiz</strong><br><em>(Pencil)</em></p><div class="btn-group"><button onclick="speakEs('Lápiz')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Pencil', 'fb-4')">🎙️ Practicar</button></div><span id="fb-4" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencils.jpg"><p><strong>Lápices</strong><br><em>(Pencils)</em></p><div class="btn-group"><button onclick="speakEs('Lápices')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Pencils', 'fb-5')">🎙️ Practicar</button></div><span id="fb-5" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/eraser.jpg"><p><strong>Borrador</strong><br><em>(Eraser)</em></p><div class="btn-group"><button onclick="speakEs('Borrador')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Eraser', 'fb-6')">🎙️ Practicar</button></div><span id="fb-6" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/erasers.jpg"><p><strong>Borradores</strong><br><em>(Erasers)</em></p><div class="btn-group"><button onclick="speakEs('Borradores')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Erasers', 'fb-7')">🎙️ Practicar</button></div><span id="fb-7" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencil_and_pen.jpg"><p><strong>Lápiz y bolígrafo</strong><br><em>(Pencil and pen)</em></p><div class="btn-group"><button onclick="speakEs('Lápiz y bolígrafo')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Pencil and pen', 'fb-8')">🎙️ Practicar</button></div><span id="fb-8" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/book.jpg"><p><strong>Libro</strong><br><em>(Book)</em></p><div class="btn-group"><button onclick="speakEs('Libro')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Book', 'fb-9')">🎙️ Practicar</button></div><span id="fb-9" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/books.jpg"><p><strong>Libros</strong><br><em>(Books)</em></p><div class="btn-group"><button onclick="speakEs('Libros')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Books', 'fb-10')">🎙️ Practicar</button></div><span id="fb-10" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/notebook.jpg"><p><strong>Cuaderno</strong><br><em>(Notebook)</em></p><div class="btn-group"><button onclick="speakEs('Cuaderno')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Notebook', 'fb-11')">🎙️ Practicar</button></div><span id="fb-11" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/notebooks.jpg"><p><strong>Cuadernos</strong><br><em>(Notebooks)</em></p><div class="btn-group"><button onclick="speakEs('Cuadernos')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Notebooks', 'fb-12')">🎙️ Practicar</button></div><span id="fb-12" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/board.jpg"><p><strong>Pizarrón</strong><br><em>(Board)</em></p><div class="btn-group"><button onclick="speakEs('Pizarrón')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Board', 'fb-13')">🎙️ Practicar</button></div><span id="fb-13" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/dictionary.jpg"><p><strong>Diccionario</strong><br><em>(Dictionary)</em></p><div class="btn-group"><button onclick="speakEs('Diccionario')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Dictionary', 'fb-14')">🎙️ Practicar</button></div><span id="fb-14" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/dictionaries.jpg"><p><strong>Diccionarios</strong><br><em>(Dictionaries)</em></p><div class="btn-group"><button onclick="speakEs('Diccionarios')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Dictionaries', 'fb-15')">🎙️ Practicar</button></div><span id="fb-15" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/marker.jpg"><p><strong>Marcador</strong><br><em>(Marker)</em></p><div class="btn-group"><button onclick="speakEs('Marcador')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Marker', 'fb-16')">🎙️ Practicar</button></div><span id="fb-16" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/markers.jpg"><p><strong>Marcadores</strong><br><em>(Markers)</em></p><div class="btn-group"><button onclick="speakEs('Marcadores')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Markers', 'fb-17')">🎙️ Practicar</button></div><span id="fb-17" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/student.jpg"><p><strong>Estudiante</strong><br><em>(Student)</em></p><div class="btn-group"><button onclick="speakEs('Estudiante')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Student', 'fb-18')">🎙️ Practicar</button></div><span id="fb-18" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/students.jpg"><p><strong>Estudiantes</strong><br><em>(Students)</em></p><div class="btn-group"><button onclick="speakEs('Estudiantes')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Students', 'fb-19')">🎙️ Practicar</button></div><span id="fb-19" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/teacher.jpg"><p><strong>Profesor/a</strong><br><em>(Teacher)</em></p><div class="btn-group"><button onclick="speakEs('Profesor')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Teacher', 'fb-20')">🎙️ Practicar</button></div><span id="fb-20" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/teachers.jpg"><p><strong>Profesoras</strong><br><em>(Teachers)</em></p><div class="btn-group"><button onclick="speakEs('Profesoras')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Teachers', 'fb-21')">🎙️ Practicar</button></div><span id="fb-21" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/desk.jpg"><p><strong>Escritorio</strong><br><em>(Desk)</em></p><div class="btn-group"><button onclick="speakEs('Escritorio')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Desk', 'fb-22')">🎙️ Practicar</button></div><span id="fb-22" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/desks.jpg"><p><strong>Escritorios</strong><br><em>(Desks)</em></p><div class="btn-group"><button onclick="speakEs('Escritorios')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Desks', 'fb-23')">🎙️ Practicar</button></div><span id="fb-23" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/chair.jpg"><p><strong>Silla</strong><br><em>(Chair)</em></p><div class="btn-group"><button onclick="speakEs('Silla')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Chair', 'fb-24')">🎙️ Practicar</button></div><span id="fb-24" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/chairs.jpg"><p><strong>Sillas</strong><br><em>(Chairs)</em></p><div class="btn-group"><button onclick="speakEs('Sillas')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Chairs', 'fb-25')">🎙️ Practicar</button></div><span id="fb-25" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/ruler.jpg"><p><strong>Regla</strong><br><em>(Ruler)</em></p><div class="btn-group"><button onclick="speakEs('Regla')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Ruler', 'fb-26')">🎙️ Practicar</button></div><span id="fb-26" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/rulers.jpg"><p><strong>Reglas</strong><br><em>(Rulers)</em></p><div class="btn-group"><button onclick="speakEs('Reglas')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Rulers', 'fb-27')">🎙️ Practicar</button></div><span id="fb-27" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/scissors.jpg"><p><strong>Tijeras</strong><br><em>(Scissors)</em></p><div class="btn-group"><button onclick="speakEs('Tijeras')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Scissors', 'fb-28')">🎙️ Practicar</button></div><span id="fb-28" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/glue.jpg"><p><strong>Pegamento</strong><br><em>(Glue)</em></p><div class="btn-group"><button onclick="speakEs('Pegamento')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Glue', 'fb-29')">🎙️ Practicar</button></div><span id="fb-29" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/paper.jpg"><p><strong>Papel</strong><br><em>(Paper)</em></p><div class="btn-group"><button onclick="speakEs('Papel')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Paper', 'fb-30')">🎙️ Practicar</button></div><span id="fb-30" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/papers.jpg"><p><strong>Papeles</strong><br><em>(Papers)</em></p><div class="btn-group"><button onclick="speakEs('Papeles')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Papers', 'fb-31')">🎙️ Practicar</button></div><span id="fb-31" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencil_case.jpg"><p><strong>Cartuchera</strong><br><em>(Pencil case)</em></p><div class="btn-group"><button onclick="speakEs('Cartuchera')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Pencil case', 'fb-32')">🎙️ Practicar</button></div><span id="fb-32" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/stapler.jpg"><p><strong>Grapadora</strong><br><em>(Stapler)</em></p><div class="btn-group"><button onclick="speakEs('Grapadora')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Stapler', 'fb-33')">🎙️ Practicar</button></div><span id="fb-33" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/calculator.jpg"><p><strong>Calculadora</strong><br><em>(Calculator)</em></p><div class="btn-group"><button onclick="speakEs('Calculadora')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Calculator', 'fb-34')">🎙️ Practicar</button></div><span id="fb-34" class="feedback"></span></div>
-    <div class="card"><img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/computer.jpg"><p><strong>Computadora</strong><br><em>(Computer)</em></p><div class="btn-group"><button onclick="speakEs('Computadora')">🔊 Escuchar</button><button class="btn-record" onclick="checkSpeech('Computer', 'fb-35')">🎙️ Practicar</button></div><span id="fb-35" class="feedback"></span></div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencil_sharpener.jpg" alt="Sacapuntas">
+      <p><strong>Sacapuntas</strong><br><em>(Pencil sharpener)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Sacapuntas')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Pencil sharpener', 'fb-0')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-0" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/school_bag.jpg" alt="Mochila">
+      <p><strong>Mochila</strong><br><em>(School bag)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Mochila')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('School bag', 'fb-1')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-1" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pen.jpg" alt="Bolígrafo">
+      <p><strong>Bolígrafo</strong><br><em>(Pen)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Bolígrafo')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Pen', 'fb-2')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-2" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pens.jpg" alt="Bolígrafos">
+      <p><strong>Bolígrafos</strong><br><em>(Pens)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Bolígrafos')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Pens', 'fb-3')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-3" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencil.jpg" alt="Lápiz">
+      <p><strong>Lápiz</strong><br><em>(Pencil)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Lápiz')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Pencil', 'fb-4')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-4" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencils.jpg" alt="Lápices">
+      <p><strong>Lápices</strong><br><em>(Pencils)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Lápices')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Pencils', 'fb-5')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-5" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/eraser.jpg" alt="Borrador">
+      <p><strong>Borrador</strong><br><em>(Eraser)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Borrador')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Eraser', 'fb-6')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-6" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/erasers.jpg" alt="Borradores">
+      <p><strong>Borradores</strong><br><em>(Erasers)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Borradores')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Erasers', 'fb-7')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-7" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencil_and_pen.jpg" alt="Lápiz y bolígrafo">
+      <p><strong>Lápiz y bolígrafo</strong><br><em>(Pencil and pen)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Lápiz y bolígrafo')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Pencil and pen', 'fb-8')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-8" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/book.jpg" alt="Libro">
+      <p><strong>Libro</strong><br><em>(Book)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Libro')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Book', 'fb-9')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-9" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/books.jpg" alt="Libros">
+      <p><strong>Libros</strong><br><em>(Books)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Libros')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Books', 'fb-10')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-10" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/notebook.jpg" alt="Cuaderno">
+      <p><strong>Cuaderno</strong><br><em>(Notebook)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Cuaderno')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Notebook', 'fb-11')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-11" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/notebooks.jpg" alt="Cuadernos">
+      <p><strong>Cuadernos</strong><br><em>(Notebooks)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Cuadernos')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Notebooks', 'fb-12')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-12" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/board.jpg" alt="Pizarrón">
+      <p><strong>Pizarrón</strong><br><em>(Board)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Pizarrón')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Board', 'fb-13')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-13" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/dictionary.jpg" alt="Diccionario">
+      <p><strong>Diccionario</strong><br><em>(Dictionary)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Diccionario')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Dictionary', 'fb-14')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-14" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/dictionaries.jpg" alt="Diccionarios">
+      <p><strong>Diccionarios</strong><br><em>(Dictionaries)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Diccionarios')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Dictionaries', 'fb-15')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-15" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/marker.jpg" alt="Marcador">
+      <p><strong>Marcador</strong><br><em>(Marker)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Marcador')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Marker', 'fb-16')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-16" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/markers.jpg" alt="Marcadores">
+      <p><strong>Marcadores</strong><br><em>(Markers)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Marcadores')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Markers', 'fb-17')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-17" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/student.jpg" alt="Estudiante">
+      <p><strong>Estudiante</strong><br><em>(Student)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Estudiante')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Student', 'fb-18')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-18" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/students.jpg" alt="Estudiantes">
+      <p><strong>Estudiantes</strong><br><em>(Students)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Estudiantes')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Students', 'fb-19')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-19" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/teacher.jpg" alt="Profesor/a">
+      <p><strong>Profesor/a</strong><br><em>(Teacher)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Profesor o profesora')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Teacher', 'fb-20')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-20" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/teachers.jpg" alt="Profesoras">
+      <p><strong>Profesoras</strong><br><em>(Teachers)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Profesoras')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Teachers', 'fb-21')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-21" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/desk.jpg" alt="Escritorio">
+      <p><strong>Escritorio</strong><br><em>(Desk)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Escritorio')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Desk', 'fb-22')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-22" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/desks.jpg" alt="Escritorios">
+      <p><strong>Escritorios</strong><br><em>(Desks)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Escritorios')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Desks', 'fb-23')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-23" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/chair.jpg" alt="Silla">
+      <p><strong>Silla</strong><br><em>(Chair)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Silla')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Chair', 'fb-24')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-24" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/chairs.jpg" alt="Sillas">
+      <p><strong>Sillas</strong><br><em>(Chairs)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Sillas')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Chairs', 'fb-25')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-25" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/ruler.jpg" alt="Regla">
+      <p><strong>Regla</strong><br><em>(Ruler)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Regla')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Ruler', 'fb-26')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-26" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/rulers.jpg" alt="Reglas">
+      <p><strong>Reglas</strong><br><em>(Rulers)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Reglas')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Rulers', 'fb-27')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-27" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/scissors.jpg" alt="Tijeras">
+      <p><strong>Tijeras</strong><br><em>(Scissors)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Tijeras')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Scissors', 'fb-28')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-28" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/glue.jpg" alt="Pegamento">
+      <p><strong>Pegamento</strong><br><em>(Glue)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Pegamento')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Glue', 'fb-29')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-29" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/paper.jpg" alt="Papel">
+      <p><strong>Papel</strong><br><em>(Paper)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Papel')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Paper', 'fb-30')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-30" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/papers.jpg" alt="Papeles">
+      <p><strong>Papeles</strong><br><em>(Papers)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Papeles')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Papers', 'fb-31')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-31" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/pencil_case.jpg" alt="Cartuchera">
+      <p><strong>Cartuchera</strong><br><em>(Pencil case)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Cartuchera')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Pencil case', 'fb-32')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-32" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/stapler.jpg" alt="Grapadora">
+      <p><strong>Grapadora</strong><br><em>(Stapler)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Grapadora')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Stapler', 'fb-33')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-33" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/calculator.jpg" alt="Calculadora">
+      <p><strong>Calculadora</strong><br><em>(Calculator)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Calculadora')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Calculator', 'fb-34')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-34" class="feedback"></span>
+    </div>
+
+    <div class="card">
+      <img src="https://englishuserteacheria.github.io/englishteacheria1/levelone/computer.jpg" alt="Computadora">
+      <p><strong>Computadora</strong><br><em>(Computer)</em></p>
+      <div class="btn-group">
+        <button onclick="speakEs('Computadora')">🔊 Escuchar</button>
+        <button class="btn-record" onclick="checkSpeech('Computer', 'fb-35')">🎙️ Practicar</button>
+      </div>
+      <span id="fb-35" class="feedback"></span>
+    </div>
+
   </div>
 
+  <!-- Paso 1 -->
   <div class="section-box">
-    <h2>Paso 1: Lee y Escucha</h2>
-    <p><em>Estudiante:</em> Buenos días maestra, ¿puedo pasar? <button onclick="speakEs('Buenos días maestra, ¿puedo pasar?')">🔊 Escuchar</button></p>
-    <p><em>Maestra Marisol:</em> Claro, pasa. ¿Cuál es tu nombre? <button onclick="speakEs('Claro, pasa. ¿Cuál es tu nombre?')">🔊 Escuchar</button></p>
-    <p><em>Ana:</em> Mi nombre es Ana. <button onclick="speakEs('Mi nombre es Ana.')">🔊 Escuchar</button></p>
+    <h2>Paso 1: Lee y Escucha <em>(Step 1: Read & Listen)</em></h2>
+    <h3>Conversación 1 <em>(Conversation 1)</em></h3>
+    <p><em>Estudiante:</em> Buenos días maestra, ¿puedo pasar? <button onclick="speakEs('Buenos días maestra, ¿puedo pasar?')">🔊 Escuchar en Español</button></p>
+    <p><em>Maestra Marisol:</em> Claro, pasa. ¿Cuál es tu nombre? <button onclick="speakEs('Claro, pasa. ¿Cuál es tu nombre?')">🔊 Escuchar en Español</button></p>
+    <p><em>Ana:</em> Mi nombre es Ana. <button onclick="speakEs('Mi nombre es Ana.')">🔊 Escuchar en Español</button></p>
+    <p><em>Maestra Marisol:</em> Mucho gusto, soy la maestra Marisol. ¿Puedes deletrear tu nombre? <button onclick="speakEs('Mucho gusto, soy la maestra Marisol. ¿Puedes deletrear tu nombre?')">🔊 Escuchar en Español</button></p>
+    <p><em>Ana:</em> A – N – A. <button onclick="speakEs('A N A')">🔊 Escuchar en Español</button></p>
+
+    <h3>Conversación 2 <em>(Conversation 2)</em></h3>
+    <p><em>Jeffrey:</em> Buenas noches Abby. <button onclick="speakEs('Buenas noches Abby.')">🔊 Escuchar en Español</button></p>
+    <p><em>Abby:</em> Hola Jeffrey, ¿cómo estás? <button onclick="speakEs('Hola Jeffrey, ¿cómo estás?')">🔊 Escuchar en Español</button></p>
+    <p><em>Jeffrey:</em> Estoy bien, gracias. Este es Alex, un estudiante nuevo. <button onclick="speakEs('Estoy bien, gracias. Este es Alex, un estudiante nuevo.')">🔊 Escuchar en Español</button></p>
+    <p><em>Abby:</em> Mucho gusto, Alex. <button onclick="speakEs('Mucho gusto, Alex.')">🔊 Escuchar en Español</button></p>
+    <p><em>Alex:</em> Mucho gusto también. <button onclick="speakEs('Mucho gusto también.')">🔊 Escuchar en Español</button></p>
   </div>
 
+  <!-- Paso 2 -->
   <div class="section-box">
-    <h2>Paso 2: Pronunciación</h2>
-    <div class="exercise-item"><p>1. <strong>"Good morning teacher, may I come in?"</strong></p><button class="btn-record" onclick="checkSpeech('Good morning teacher, may I come in?', 'p-fb-1')">🎙️ Pronunciar</button><span id="p-fb-1" class="feedback"></span></div>
+    <h2>Paso 2: Ejercicios de Pronunciación en Inglés <em>(Step 2: Pronunciation Practice)</em></h2>
+    <p>Presiona el botón de micrófono, pronuncia la frase en inglés y verifica tu resultado:</p>
+    
+    <div class="exercise-item">
+      <p>1. <strong>"Good morning teacher, may I come in?"</strong></p>
+      <button class="btn-record" onclick="checkSpeech('Good morning teacher, may I come in?', 'p-fb-1')">🎙️ Pronunciar</button>
+      <span id="p-fb-1" class="feedback"></span>
+    </div>
+
+    <div class="exercise-item">
+      <p>2. <strong>"What is your name?"</strong></p>
+      <button class="btn-record" onclick="checkSpeech('What is your name?', 'p-fb-2')">🎙️ Pronunciar</button>
+      <span id="p-fb-2" class="feedback"></span>
+    </div>
+
+    <div class="exercise-item">
+      <p>3. <strong>"Nice to meet you"</strong></p>
+      <button class="btn-record" onclick="checkSpeech('Nice to meet you', 'p-fb-3')">🎙️ Pronunciar</button>
+      <span id="p-fb-3" class="feedback"></span>
+    </div>
   </div>
 
+  <!-- Paso 3 -->
   <div class="section-box">
-    <h2>Paso 3 y 4: Ejercicios</h2>
-    <div class="exercise-item"><p>¿Cómo se dice Mochila?</p><button onclick="checkQuiz('q1', 'School bag', 'q-fb')">School bag</button><span id="q-fb" class="feedback"></span></div>
+    <h2>Paso 3: Selección Múltiple <em>(Step 3: Multiple Choice)</em></h2>
+    
+    <div class="exercise-item">
+      <p>1. ¿Cómo se dice <strong>"Mochila"</strong> en inglés?</p>
+      <button onclick="checkQuiz('q1', 'School bag', 'quiz-fb-1')">A) School bag</button>
+      <button onclick="checkQuiz('q1', 'Pencil', 'quiz-fb-1')">B) Pencil</button>
+      <button onclick="checkQuiz('q1', 'Eraser', 'quiz-fb-1')">C) Eraser</button>
+      <span id="quiz-fb-1" class="feedback"></span>
+    </div>
+
+    <div class="exercise-item">
+      <p>2. ¿Cómo responde una persona a <strong>"Nice to meet you"</strong>?</p>
+      <button onclick="checkQuiz('q2', 'Good morning', 'quiz-fb-2')">A) Good morning</button>
+      <button onclick="checkQuiz('q2', 'Nice to meet you too', 'quiz-fb-2')">B) Nice to meet you too</button>
+      <button onclick="checkQuiz('q2', 'Good evening', 'quiz-fb-2')">C) Good evening</button>
+      <span id="quiz-fb-2" class="feedback"></span>
+    </div>
   </div>
 
+  <!-- Paso 4 -->
+  <div class="section-box">
+    <h2>Paso 4: Completa los Espacios <em>(Step 4: Fill in the Blanks)</em></h2>
+    
+    <div class="exercise-item">
+      <p>1. Good ________ (mañana), teacher.</p>
+      <input type="text" id="fill-1" placeholder="Escribe aquí...">
+      <button onclick="checkFill('fill-1', 'morning', 'fill-fb-1')">Comprobar</button>
+      <span id="fill-fb-1" class="feedback"></span>
+    </div>
+
+    <div class="exercise-item">
+      <p>2. What is your ________ (nombre)?</p>
+      <input type="text" id="fill-2" placeholder="Escribe aquí...">
+      <button onclick="checkFill('fill-2', 'name', 'fill-fb-2')">Comprobar</button>
+      <span id="fill-fb-2" class="feedback"></span>
+    </div>
+  </div>
+
+  <!-- JavaScript con Configuración Forzada para Español de México (es-MX) -->
   <script>
-    function speakEs(txt) {
-      if ('speechSynthesis' in window) {
-        const u = new SpeechSynthesisUtterance(txt);
-        u.lang = 'es-MX';
-        window.speechSynthesis.cancel();
-        window.speechSynthesis.speak(u);
-      }
-    }
-    function checkSpeech(expected, id) {
-      const Rec = window.SpeechRecognition || window.webkitSpeechRecognition;
-      if (!Rec) return alert('No soportado');
-      const rec = new Rec();
-      rec.lang = 'en-US';
-      rec.start();
-      rec.onresult = e => {
-        const t = e.results[0][0].transcript.toLowerCase();
-        document.getElementById(id).innerText = t.includes(expected.toLowerCase()) ? '¡Excelente!' : 'Inténtalo de nuevo';
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = function() {
+        window.speechSynthesis.getVoices();
       };
     }
-    function checkQuiz(q, ans, id) {
-      document.getElementById(id).innerText = ans === 'School bag' ? '¡Correcto!' : 'Incorrecto';
+
+    function speakEs(text) {
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'es-MX'; // Forzar español de México
+
+        const voices = window.speechSynthesis.getVoices();
+        // Buscar explícitamente una voz de México o latinoamericana
+        const mxVoice = voices.find(v => v.lang === 'es-MX' || v.lang.includes('MX') || v.lang.startsWith('es-'));
+        if (mxVoice) {
+          utterance.voice = mxVoice;
+        }
+
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert('Tu navegador no soporta la reproducción de audio.');
+      }
+    }
+
+    function checkSpeech(expectedText, elementId) {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const feedbackEl = document.getElementById(elementId);
+
+      if (!SpeechRecognition) {
+        feedbackEl.className = 'feedback incorrect';
+        feedbackEl.innerText = '❌ Micrófono no soportado en este navegador';
+        return;
+      }
+
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      feedbackEl.className = 'feedback';
+      feedbackEl.innerText = '🎙️ Escuchando... habla en inglés.';
+
+      recognition.start();
+
+      recognition.onresult = function(event) {
+        const transcript = event.results[0][0].transcript.toLowerCase().trim();
+        const expected = expectedText.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").trim();
+
+        if (transcript.includes(expected) || expected.includes(transcript)) {
+          feedbackEl.className = 'feedback correct';
+          feedbackEl.innerText = `¡Excelente! Escuché: "${transcript}"`;
+        } else {
+          feedbackEl.className = 'feedback incorrect';
+          feedbackEl.innerText = `Inténtalo de nuevo. Escuché: "${transcript}"`;
+        }
+      };
+
+      recognition.onerror = function() {
+        feedbackEl.className = 'feedback incorrect';
+        feedbackEl.innerText = '❌ No se pudo detectar voz.';
+      };
+    }
+
+    function checkQuiz(question, answer, elementId) {
+      const feedbackEl = document.getElementById(elementId);
+      const correctAnswers = {
+        'q1': 'School bag',
+        'q2': 'Nice to meet you too'
+      };
+
+      if (answer === correctAnswers[question]) {
+        feedbackEl.className = 'feedback correct';
+        feedbackEl.innerText = '¡Correcto!';
+      } else {
+        feedbackEl.className = 'feedback incorrect';
+        feedbackEl.innerText = 'Incorrecto, intenta de nuevo.';
+      }
+    }
+
+    function checkFill(inputId, correctAnswer, elementId) {
+      const userInputValue = document.getElementById(inputId).value.trim().toLowerCase();
+      const feedbackEl = document.getElementById(elementId);
+
+      if (userInputValue === correctAnswer.toLowerCase()) {
+        feedbackEl.className = 'feedback correct';
+        feedbackEl.innerText = '¡Correcto!';
+      } else {
+        feedbackEl.className = 'feedback incorrect';
+        feedbackEl.innerText = 'Incorrecto, revisa la respuesta.';
+      }
     }
   </script>
+
 </body>
 </html>
